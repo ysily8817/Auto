@@ -1,0 +1,25 @@
+[
+  {
+    "description": "带heards的请求",
+    "request": {
+      "uri": "/withHeaders",
+      "method": "post",
+      "headers": {
+        "contents-type": "application/json"
+      },
+      "json": {
+        "name": "yang",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "json": {
+        "响应结果": "success!!!",
+        "status": "20000"
+      },
+      "headers": {
+        "contents-type": "text/html;charset=gbk"
+      }
+    }
+  }
+]

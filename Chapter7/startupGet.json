@@ -1,0 +1,32 @@
+[
+  {
+    "description": "这是一个不带参数的get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "不带参数的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带参数的get请求",
+    "request": {
+      "uri": "/getWithParam",
+      "method": "get",
+      "queries": {
+        "name": "ycm",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "text": "登录成功",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]
