@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aaa" target="1.5" />
-      <module name="Chapter10" target="1.8" />
+      <module name="Chapter10" target="8" />
       <module name="Chapter6" target="1.5" />
       <module name="Chapter6 (1)" target="1.5" />
       <module name="Chapter9" target="1.5" />
@@ -21,7 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Chapter10" options="-parameters" />
+      <module name="Chapter10" options="" />
     </option>
   </component>
 </project>
