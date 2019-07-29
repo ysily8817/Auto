@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @Api(value = "/", description = "这是我全部的post方法")
 public class MyPostMethod {
 
-    private Cookie cookie;
+    private static Cookie cookie;
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ApiOperation(value = "登录接口,登录后获取cookie信息", httpMethod = "post")
     public String login(HttpServletResponse response,
@@ -31,10 +32,12 @@ public class MyPostMethod {
     @ApiOperation(value = "返回用户信息", httpMethod = "post")
     public String getUserList(HttpServletRequest request,
                             @RequestBody User user) {
-        User users = null;
+
+        User users = new User();
         users.setName("张老板");
         users.setAge("30");
         users.setSex("man");
+        
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie : cookies) {
             if(cookie.getName().equals("login") && cookie.getValue().equals("ture")) {
@@ -42,6 +45,5 @@ public class MyPostMethod {
             }
         }
         return "参数有误";
-
     }
 }
