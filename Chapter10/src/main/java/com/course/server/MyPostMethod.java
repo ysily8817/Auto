@@ -37,7 +37,7 @@ public class MyPostMethod {
         users.setName("张老板");
         users.setAge("30");
         users.setSex("man");
-        
+
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie : cookies) {
             if(cookie.getName().equals("login") && cookie.getValue().equals("ture")) {
