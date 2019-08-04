@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 //要扫描哪个包
 @ComponentScan("com.course")
-public class Application {
+class Application {
 
     public static void main(String args[]) {
         SpringApplication.run(Application.class,args);
